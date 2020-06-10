@@ -1,0 +1,66 @@
+$edx101-font-color: Black;
+$edx101-background-color: PowerBlue;
+$edx101-border-color: Blue;
+$edx101-border-width: 1px;
+$edx101-border-style: solid;
+
+img {
+        display: block;
+        border-radius: 60%;
+        border: 1px solid #ddd;
+}
+
+body {
+        font-color: $edx101-font-color;
+        background-color: $edx101-background-color;
+}
+
+th {
+        border: $edx101-border-width $edx101-border-style $edx101-border-color;
+}
+
+#all_music {
+        background-color: $edx101-background-color;
+        color: $edx101-font-color;
+}
+
+#all_music_text {
+        .col, .col-2, .col-3, .col-4, .col-5 {
+                border-style: $edx101-border-style;
+                border-width: $edx101-border-width;
+                border-color: $edx101-border-color;
+        }
+}
+
+ul {
+        display: table;
+        .list-group {
+                display: table-cell;
+                list-style: none;
+                font-color: orange;
+        }
+}
+
+/*
+Below code taken from:
+https://html-online.com/articles/blinking-text-css-animation/
+*/
+#blinker {
+        animation:blinkingText 3.0s infinite;
+        font-size: 24px;
+        text-align: center;
+}
+@keyframes blinkingText{
+    0%{     color: $edx101-font-color;    }
+    49%{    color: $edx101-font-color; }
+    60%{    color: transparent; }
+    99%{    color: transparent;  }
+    100%{   color: $edx101-font-color;    }
+}
+
+@media only screen and (max-width: 500px) {
+        .responsive {
+                width: 100%;
+        }
+}
+

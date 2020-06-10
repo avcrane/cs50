@@ -1,0 +1,69 @@
+img {
+  display: block;
+  border-radius: 60%;
+  border: 1px solid #ddd;
+}
+
+body {
+  font-color: Black;
+  background-color: PowerBlue;
+}
+
+th {
+  border: 1px solid Blue;
+}
+
+#all_music {
+  background-color: PowerBlue;
+  color: Black;
+}
+
+#all_music_text .col, #all_music_text .col-2, #all_music_text .col-3, #all_music_text .col-4, #all_music_text .col-5 {
+  border-style: solid;
+  border-width: 1px;
+  border-color: Blue;
+}
+
+ul {
+  display: table;
+}
+ul .list-group {
+  display: table-cell;
+  list-style: none;
+  font-color: Black;
+}
+
+/*
+Below code taken from:
+https://html-online.com/articles/blinking-text-css-animation/
+*/
+#blinker {
+  animation: blinkingText 3s infinite;
+  font-size: 24px;
+  text-align: center;
+}
+
+@keyframes blinkingText {
+  0% {
+    color: Black;
+  }
+  49% {
+    color: Black;
+  }
+  60% {
+    color: transparent;
+  }
+  99% {
+    color: transparent;
+  }
+  100% {
+    color: Black;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+/*# sourceMappingURL=scss101.css.map */
